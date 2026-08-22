@@ -1,0 +1,9 @@
+#!name=HKUSTGZ Printer Direct
+#!desc=Resolve the HKUST(GZ) public printer with campus DNS while keeping Shadowrocket connected.
+
+[Host]
+printer.hkust-gz.edu.cn = server:10.90.63.2
+
+[Rule]
+DOMAIN,printer.hkust-gz.edu.cn,DIRECT
+IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
